@@ -3,7 +3,7 @@ const express = require("express");
 const multer = require("multer"); // Middleware for handling file uploads
 const upload = multer(); // Create an instance of multer
 const app = express();
-const port = 5500;
+const port = process.env.PORT || 3030;
 
 app.use(express.json());
 
