@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Parser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Receipt Parser</h1>
+        </header>
+        <main>
+            <section class="upload-section">
+                <h2>Upload a Receipt</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <input type="file" name="input" id="receiptFile" accept=".jpg, .jpeg, .png, .pdf">
+                    <button type="submit">Upload and Parse</button>
+                </form>
+            </section>
+            <section class="preview-section">
+                <h2>Receipt Preview</h2>
+                <div id="receiptPreview">
+                    <img id="previewImage" src="#" alt="Receipt Preview">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>Parsing Result:</h2>
+            <pre id="result"></pre>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
